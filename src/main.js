@@ -34,7 +34,7 @@ window.onload = function()
 
       // Fix a stylization issue with the about section
       if (navID === 'about' && navBtns)
-        navBtns.style.marginLeft = '4em';
+        navBtns.style.marginLeft = '9.5em';
       
       else 
         navBtns.style.marginLeft = '';
