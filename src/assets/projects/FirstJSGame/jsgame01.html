@@ -1,0 +1,45 @@
+<title>Super Ball Break</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    body {
+        margin: 0;
+        background: black;
+    }
+
+    .hit_score {
+        text-align: center;
+        color: bisque;
+        position: fixed;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        user-select: none;
+    }
+</style>
+
+<div class="hit_score">
+    <span>Hit Score:</span>
+    <span id="score_num">0</span>
+</div>
+
+<div class="fixed inset-0 flex items-center justify-center" id="modalEl">
+    <div class="bg-white max-w-md w-full p-10 text-center">
+        <h1 class="text-5xl font-bold" id="bgScoreEl">0</h1>
+        <p class="text-gray-750 mb-4">Score</p>
+        <div>
+            <button class="bg-gray-500 text-white w-full py-4 rounded-full" id="startGameBtn">Start Game</button>
+        </div>
+    </div>
+</div>
+
+
+<canvas></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+    integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="jsgame01.js"></script>
