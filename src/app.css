@@ -139,14 +139,14 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
-    left: 16em;
+    left: 27em;
     top: -12em;
 }
 
   .combat-txt
   {
     position: relative;
-    left: -12em;
+    /* left: -12em; */
     margin-top: 5em;
     width: 450px;
 }
@@ -166,7 +166,7 @@ main
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
     top: -15em;
-    left: -16em;
+    left: -4em;
   }
 
   .water-gif02
@@ -177,7 +177,7 @@ main
   .water-txt
   {
     position: relative;
-    left: 12em;
+    left: 25em;
     top: 7em;
     width: 450px;
 }
@@ -235,7 +235,7 @@ main
   .oa-vid
   {
     position: relative;
-    left: 15em;
+    left: 28em;
     margin-top: -10em;
     margin-bottom: 5em;
   }
@@ -243,7 +243,7 @@ main
   .oa-txt
   {
     position: relative;
-    left: -13em;
+    left: -0.5em;
     top: 2em;
     width: 450px;
     margin-top: 4em;
@@ -278,8 +278,8 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-top: -4em;
-    margin-left: 12em;
+    /* margin-top: -4em;
+    margin-left: 12em; */
   }
 
   #personal_work
@@ -287,8 +287,8 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-right: -43em;
-    margin-top: -24em;
+    /* margin-right: -43em;
+    margin-top: -24em; */
   }
 
   #about
@@ -296,8 +296,8 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-left: -1em;
-    margin-top: -24em;
+    /* margin-left: -1em;
+    margin-top: -24em; */
   }
 
 @media (prefers-color-scheme: light) {
