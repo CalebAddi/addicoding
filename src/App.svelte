@@ -42,7 +42,7 @@
                   Every part of the enemy will have weight to how you kill enemies as well (hitting the AI in the head should do more damage than if it was hit in the shoulder).
                 </p>
               </div>
-              <img class="combat-gif" src="/src/assets/gifs/Combat_Example.gif" alt="Combat Example">
+              <img class="combat-gif" src="../src/assets/gifs/Combat_Example.gif" alt="Combat Example">
             </div>
             <div class="water_system">
               <div class="water-txt">
@@ -52,9 +52,9 @@
                   Depending on the weather conditions and time of day your sea traversal may vary. Some places will only be traversable depending on when the tides are lower or higher.
                 </p>
               </div>
-              <img class="water-gif" src="/src/assets/gifs/Water_BoatExample.gif" alt="Water Weather Change Example">
+              <img class="water-gif" src="../src/assets/gifs/Water_BoatExample.gif" alt="Water Weather Change Example">
               <div class="water-gif02">
-                <img class="water-gif" src="/src/assets/gifs/Weather_Change.gif" alt="Weather Change Example">
+                <img class="water-gif" src="../src/assets/gifs/Weather_Change.gif" alt="Weather Change Example">
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
       <!-- About -->
         <article id="about">
           <h2>About</h2>
-          <span class="image main"><img src="./src/images/pic03.JPG" alt="" /></span>
+          <span class="image main"><img src="../src/images/pic03.JPG" alt="" /></span>
           <p>My name is Caleb, and I'm a Software Engineer.</p>
 
           <p>As a Software Engineer, I've worked on websites for various fields and businesses. I've
