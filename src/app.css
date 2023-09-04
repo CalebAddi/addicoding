@@ -127,7 +127,7 @@ main
   .wr-combat
   {
     margin-top: 2em;
-    margin-bottom: -8em;
+    /* margin-bottom: -8em; */
   }
 
   .combat-gif
@@ -139,7 +139,7 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
-    left: 27em;
+    left: 16em;
     top: -12em;
 }
 
@@ -165,7 +165,7 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
-    top: -15em;
+    /* top: -15em; */
     left: -4em;
   }
 
@@ -218,7 +218,7 @@ main
 
   .OA_Main
   {
-    margin-top: -4em;
+    margin-top: 10em;
   }
 
   .oa-img
@@ -235,7 +235,7 @@ main
   .oa-vid
   {
     position: relative;
-    left: 28em;
+    left: 15em;
     margin-top: -10em;
     margin-bottom: 5em;
   }
@@ -243,7 +243,7 @@ main
   .oa-txt
   {
     position: relative;
-    left: -0.5em;
+    /* left: -0.5em; */
     top: 2em;
     width: 450px;
     margin-top: 4em;
