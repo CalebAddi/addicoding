@@ -42,7 +42,8 @@
                   Every part of the enemy will have weight to how you kill enemies as well (hitting the AI in the head should do more damage than if it was hit in the shoulder).
                 </p>
               </div>
-              <img class="combat-gif" src="./src/assets/gifs/Combat_Example.gif" alt="Combat Example">
+              <!-- <img class="combat-gif" src="./src/assets/gifs/Combat_Example.gif" alt="Combat Example"> -->
+              <iframe class="combat-gif" src="https://www.youtube.com/embed/OwQqwBWH-lM?si=r3pJYfkf5jRGl_rV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="water_system">
               <div class="water-txt">
@@ -52,9 +53,10 @@
                   Depending on the weather conditions and time of day your sea traversal may vary. Some places will only be traversable depending on when the tides are lower or higher.
                 </p>
               </div>
-              <img class="water-gif" src="./src/assets/gifs/Water_BoatExample.gif" alt="Water Weather Change Example">
+              <!-- <img class="water-gif" src="./src/assets/gifs/Water_BoatExample.gif" alt="Water Weather Change Example"> -->
+              <iframe class="water-gif" src="https://www.youtube.com/embed/c4UHRE1iIA4?si=rYBoL4jfaZC765f2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <div class="water-gif02">
-                <img class="water-gif" src="./src/assets/gifs/Weather_Change.gif" alt="Weather Change Example">
+                <!-- <img class="water-gif" src="./src/assets/gifs/Weather_Change.gif" alt="Weather Change Example"> -->
               </div>
             </div>
           </div>
