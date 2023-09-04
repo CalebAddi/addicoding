@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { Color } from 'three';
+import './app.css';
 
 const scene = new THREE.Scene();
 scene.background = new Color('#1b1c1e');

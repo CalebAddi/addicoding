@@ -68,6 +68,7 @@ button:focus-visible {
 
 main
   {
+    position: relative;
     background-color: rgb(24, 32, 41, .65);
     z-index: 0;
     padding-left: 4em;
@@ -76,6 +77,8 @@ main
     border-top: solid 2.5px rgb(215, 200, 200, 0.7);
     border-left: solid 2.5px rgb(215, 200, 200, 0.7);
     border-right: solid 2.5px rgb(215, 200, 200, 0.7);
+    padding-bottom: 25em;
+    margin-top: -12em;
   }
 
   canvas {
