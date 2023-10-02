@@ -1,44 +1,44 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* line-height: 1.5;
+  font-weight: 400; */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  /* background-color: #242424; */
+/* 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-.card {
+/* .card {
   padding: 2em;
-}
+} */
 
 #app {
   max-width: 1280px;
@@ -47,7 +47,7 @@ h1 {
   text-align: center;
 }
 
-button {
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -64,7 +64,7 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 main
   {
@@ -122,62 +122,68 @@ main
     font-size: 1.7em;
     font-style: italic;
     letter-spacing: 1.2px;
+    color: rgb(215, 200, 200, 0.88);
+  }
+
+  .skill-tool
+  {
+    margin-top: -0.95em;
+    margin-bottom: 4em;
+    font-size: .85em;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    color: rgb(215, 200, 200, 0.88);
   }
 
   .wr-combat
   {
-    margin-top: 2em;
-    /* margin-bottom: -8em; */
+    margin-top: 10em;
   }
 
   .combat-gif
   {
     position: relative;
-    width: 325px;
+    width: 400px;
     height: 225px;
     border-bottom: solid 1.5px rgb(215, 200, 200, 0.7);
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
-    left: 16em;
+    margin-left: 40em;
     top: -12em;
 }
 
   .combat-txt
   {
     position: relative;
-    /* left: -12em; */
-    margin-top: 5em;
     width: 450px;
 }
 
   .water_system
   {
-    margin-top: 2em;
+    margin-top: -5em;
   }
 
   .water-gif
   {
     position: relative;
-    width: 325px;
+    width: 400px;
     height: 225px;
     border-bottom: solid 1.5px rgb(215, 200, 200, 0.7);
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
-    top: -8em;
-    left: -15.2em;
-  }
-
-  .water-gif02
-  {
-    position: relative;
+    top: -6em;
+    margin-right: 42em;
+    /* left: -20.5em; */
   }
 
   .water-txt
   {
     position: relative;
-    left: 25em;
+    margin-left:40em;
+    /* left: 28em; */
     top: 7em;
     width: 450px;
 }
@@ -186,10 +192,12 @@ main
   {
     display: flex;
     position: relative;
-    padding: 5em;
+    margin-top: 7em;
+    margin-left: -2em;
+    /* padding: 5em; */
     justify-content: center;
     align-items: center;
-    float: left;
+    /* float: left; */
     color: rgb(215, 200, 200, 0.88);
     text-align: center;
     text-decoration: none;
@@ -216,37 +224,65 @@ main
     margin-top: 5em;
   }
 
+  .Ard_Main
+  {
+    margin-top: 10em;
+  }
+
+  .ard-container
+  {
+    margin-top: 12em;
+  }
+
+  .ard-gif
+  {
+    position: relative;
+    width: 400px;
+    height: 225px;
+    border-bottom: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-top: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-left: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+    margin-left: 40em;
+    top: -12em;
+  }
+
+  .ard-txt
+  {
+    position: relative;
+    width: 450px;
+  }
+
   .OA_Main
   {
     margin-top: 10em;
   }
 
+  .oa-container
+  {
+    margin-top: 6em;
+  }
+
   .oa-img
   {
     position: relative;
-    width: 350px;
-    height: 240px;
+    width: 400px;
+    height: 225px;
     border-bottom: solid 1.5px rgb(215, 200, 200, 0.7);
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
-  }
-
-  .oa-vid
-  {
-    position: relative;
-    left: 15em;
-    margin-top: -10em;
-    margin-bottom: 5em;
+    top: -6em;
+    margin-right: 42em;
   }
 
   .oa-txt
   {
     position: relative;
-    /* left: -0.5em; */
-    top: 2em;
+    margin-left:40em;
+    /* left: 28em; */
+    top: 7em;
     width: 450px;
-    margin-top: 4em;
   }
 
   #nav-link 
@@ -278,8 +314,7 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    /* margin-top: -4em;
-    margin-left: 12em; */
+    margin-top: -2em;
   }
 
   #personal_work
@@ -287,8 +322,7 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    /* margin-right: -43em;
-    margin-top: -24em; */
+    margin-top: -2em;
   }
 
   #about
@@ -296,11 +330,18 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    /* margin-left: -1em;
-    margin-top: -24em; */
+    margin-top: -2em;
   }
 
-@media (prefers-color-scheme: light) {
+  #contact
+  {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    margin-top: -2em;
+  }
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -311,4 +352,4 @@ main
   button {
     background-color: #f9f9f9;
   }
-}
+} */
