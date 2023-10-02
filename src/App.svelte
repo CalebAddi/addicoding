@@ -108,6 +108,8 @@
         <article id="personal_work">
           <h2>Personal Projects</h2>
 
+          <p style="font-size: 2.5em; color: orange;">( UNDER CONSTRUCTION )</p>
+
           <div class="web_main">
             <h3>Three.js Globe Site</h3>
           </div>
@@ -119,17 +121,23 @@
       <!-- About -->
         <article id="about">
           <h2>About</h2>
-          <!-- <span class="image main"><img src="../src/images/pic03.JPG" alt="" /></span> -->
-          <p>My name is Caleb, and I'm a Software Engineer.</p>
+          <div class="about-container">
+            <p>My name is Caleb, and I'm a Software Engineer.</p>
 
-          <p>As a Software Engineer, I've worked on websites for various fields and businesses. I've
-            worked on programming for personal game projects in Unreal Engine/Unity using C++ and C# as well as a few client game projects in
-            JS. I also do Full Stack Development for the Ocean Aero TRITON GUI (using PHP/Laravel and JavaScript) along with building simulations for Machine Learning and more.</p>
+            <p>As a Software Engineer, I've worked on websites for various fields and businesses. I've
+              worked on programming for personal game projects in Unreal Engine/Unity using C++ and C# as well as a few client game projects in
+              JS. I also do Full Stack Development for the Ocean Aero TRITON GUI (using PHP/Laravel and JavaScript) along with building simulations for Machine Learning and more.
+            </p>
+          </div>
         </article>
 
       <!-- Contact -->
         <article id="contact">
           <h2>Contact</h2>
+
+          <p style="font-size: 2.5em; color: orange;">( UNDER CONSTRUCTION )</p>
+
+
           <form method="POST" action="https://formsubmit.co/caleb.addi.77@gmail.com">
             <div class="fields">
               <div class="field half">

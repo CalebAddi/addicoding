@@ -67,7 +67,7 @@ main
 
   h3
   {
-    font-family: fantasy;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
     font-size: 1.7em;
     font-style: italic;
@@ -229,6 +229,11 @@ main
     top: 7em;
     width: 450px;
   }
+
+  /* .about-container
+  {
+    width: 600px;
+  } */
 
   #nav-link 
   {
