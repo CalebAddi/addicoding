@@ -1,44 +1,13 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5;
-  font-weight: 400; */
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
-/* 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
 }
-
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
-
-/* body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-} */
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-/* .card {
-  padding: 2em;
-} */
 
 #app {
   max-width: 1280px;
@@ -46,25 +15,6 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
-
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 main
   {
@@ -176,14 +126,12 @@ main
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
     top: -6em;
     margin-right: 42em;
-    /* left: -20.5em; */
   }
 
   .water-txt
   {
     position: relative;
     margin-left:40em;
-    /* left: 28em; */
     top: 7em;
     width: 450px;
 }
@@ -194,10 +142,8 @@ main
     position: relative;
     margin-top: 7em;
     margin-left: -2em;
-    /* padding: 5em; */
     justify-content: center;
     align-items: center;
-    /* float: left; */
     color: rgb(215, 200, 200, 0.88);
     text-align: center;
     text-decoration: none;
@@ -255,7 +201,7 @@ main
 
   .OA_Main
   {
-    margin-top: 10em;
+    margin-top: 7em;
   }
 
   .oa-container
@@ -280,7 +226,6 @@ main
   {
     position: relative;
     margin-left:40em;
-    /* left: 28em; */
     top: 7em;
     width: 450px;
   }
@@ -314,7 +259,7 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-top: -2em;
+    margin-top: 5em;
   }
 
   #personal_work
@@ -322,7 +267,7 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-top: -2em;
+    margin-top: 5em;
   }
 
   #about
@@ -330,7 +275,7 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-top: -2em;
+    margin-top: 5em;
   }
 
   #contact
@@ -338,18 +283,5 @@ main
     justify-content: center;
     display: grid;
     align-items: center;
-    margin-top: -2em;
+    margin-top: 5em;
   }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
