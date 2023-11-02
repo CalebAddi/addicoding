@@ -100,6 +100,7 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+    box-shadow: 5px 5px black;
     margin-left: 40em;
     top: -12em;
 }
@@ -124,6 +125,7 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+    box-shadow: 5px 5px black;
     top: -6em;
     margin-right: 42em;
   }
@@ -189,6 +191,7 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+    box-shadow: 5px 5px black;
     margin-left: 40em;
     top: -12em;
   }
@@ -218,6 +221,7 @@ main
     border-top: solid 1.5px rgb(215, 200, 200, 0.7);
     border-left: solid 1.5px rgb(215, 200, 200, 0.7);
     border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+    box-shadow: 5px 5px black;
     top: -6em;
     margin-right: 42em;
   }
@@ -234,6 +238,44 @@ main
   {
     width: 600px;
   } */
+
+  .h3_lilJS
+  {
+    padding-bottom: 1em;
+  }
+
+  .span_div
+  {
+    border-left: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-bottom: solid 1px rgb(215, 200, 200, 0.7); 
+    border-top: solid 1.5px rgb(215, 200, 200, 0.7);
+    box-shadow: 10px 10px black;
+    margin-bottom: 2em;
+  }
+
+  .span_img
+  {
+    height: 400px;
+    width: auto;
+    margin-top: 7em;
+    border-bottom: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-top: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-left: solid 1.5px rgb(215, 200, 200, 0.7);
+    border-right: solid 1.5px rgb(215, 200, 200, 0.7);
+  }
+
+  .jsGame-main
+  {
+    margin-top: 7em;
+    margin-bottom: 1em;
+  }
+
+  .web_main
+  {
+    margin-top: 7em;
+    margin-bottom: 1em;
+  }
 
   #nav-link 
   {

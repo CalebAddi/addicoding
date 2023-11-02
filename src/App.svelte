@@ -9,7 +9,7 @@
 
 <canvas bind:this={el}></canvas>
 <!-- test -->
-<main>
+<main class="home_container">
   <header id="header">
     <div class="content">
       <div class="inner">
@@ -108,13 +108,41 @@
         <article id="personal_work">
           <h2>Personal Projects</h2>
 
-          <p style="font-size: 2.5em; color: orange;">( UNDER CONSTRUCTION )</p>
-
           <div class="web_main">
-            <h3>Three.js Globe Site</h3>
+            <h3 style="border-bottom: solid 1px rgb(215, 200, 200, 0.7); padding-bottom: 0.5em; text-shadow: 5px 5px black;">Simple Web Projects</h3>
+
+            <div class="span_div">
+              <span><a href = 'https://celadon-daifuku-b4fd9b.netlify.app/' target="_blank">
+                <img class="span_img" src="./src/assets/images/shopify.png" alt="Simple-React-Template" /></a>
+                <h3>Admin Dashboard (Using ReactJS)</h3></span>
+            </div>
+
+            <div class="span_div">
+              <span><a href = 'https://spiffy-liger-2e0760.netlify.app/' target="_blank">
+                <img class="span_img" src="./src/assets/images/planetearth.png" alt="threejs-globe" /></a>
+                <h3>Earth Charity Hub (Using Three.js)</h3></span>
+            </div>
           </div>
           <div class="jsGame-main">
-            <h3>Survive The Swarm</h3>
+            <h3 style="border-bottom: solid 1px rgb(215, 200, 200, 0.7); padding-bottom: 0.5em; text-shadow: 5px 5px black;">Simple JS Games</h3>
+            
+            <div class="span_div">
+              <span><a href='./src/assets/projects/FirstJSGame/jsgame01.html' target="_blank">
+                <img class="span_img" src="./src/assets/images/surviveswarm.png" alt="" /></a>
+                <h3 class="h3_lilJS">Survive The Swarm</h3></span>
+            </div>
+
+            <div class="span_div">
+              <span><a href='./src/assets/projects/DiceGame/index.html' target="_blank">
+                <img class="span_img" src="./src/assets/images/diceroll.png" alt="" /></a>
+                <h3 class="h3_lilJS">Dice Roll (Requires 2 Players)</h3></span>
+            </div>
+
+						<div class="span_div">
+              <span><a href='./src/assets/projects/GuessMyNumber/index.html' target="_blank">
+                <img class="span_img" src="./src/assets/images/guessnum.png" alt="" /></a>
+                <h3 class="h3_lilJS">Guess The Number</h3></span>
+            </div>
           </div>
         </article>
 

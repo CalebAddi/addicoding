@@ -17,6 +17,17 @@ window.onload = function()
 
   const navLinks = document.querySelectorAll('.nav-li a');
 
+  function HomePageAdjustment(isArticleVisible)
+  {
+    const homePage = document.querySelector('.home_container');
+
+    if (homePage)
+    {
+      homePage.style.marginBottom = isArticleVisible ? '0' : '-10em';
+    }
+  }
+  HomePageAdjustment(false);
+
   navLinks.forEach(link =>
   {
     link.addEventListener('click', function(e)
@@ -27,6 +38,8 @@ window.onload = function()
       {
         article.style.display = 'none';
       });
+
+      HomePageAdjustment(false); //no articles available to show
 
       const navID = this.getAttribute('href').slice(1); //Getting the id from the href attribute
       const clickedArticle = document.getElementById(navID);
@@ -39,6 +52,7 @@ window.onload = function()
         {
           clickedArticle.style.display = 'none';
           currVisibleArticle = null;
+          HomePageAdjustment(false);
 
           if (navID === 'about' && navBtns)
           {
@@ -54,6 +68,7 @@ window.onload = function()
 
           clickedArticle.style.display = 'block';
           currVisibleArticle = clickedArticle;
+          HomePageAdjustment(true); // articles are now visible
         }
       }
     });
@@ -61,3 +76,5 @@ window.onload = function()
 }
 
 export default app;
+
+// homePage.style.marginBottom = '-5em';
