@@ -127,7 +127,7 @@
             <h3 style="border-bottom: solid 1px rgb(215, 200, 200, 0.7); padding-bottom: 0.5em; text-shadow: 5px 5px black;">Simple JS Games</h3>
             
             <div class="span_div">
-              <span><a href='assets/projects/FirstJSGame/jsgame01.html' target="_blank">
+              <span><a href='assets/projects/FirstJSGame/index.html' target="_blank">
                 <img class="span_img" src="assets/images/surviveswarm.png" alt="" /></a>
                 <h3 class="h3_lilJS">Survive The Swarm</h3></span>
             </div>
