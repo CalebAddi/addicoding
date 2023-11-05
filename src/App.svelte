@@ -169,6 +169,7 @@
           <h2>Contact</h2>
 
           <form method="POST" action="https://formsubmit.co/caleb.addi.77@gmail.com">
+            <input type="hidden" name="_next" value="https://calebaddi.github.io/addicoding">
             <div class="fields">
               <div class="field half">
                 <label for="name">Name</label>
