@@ -75,6 +75,43 @@ window.onload = function()
   });
 }
 
-export default app;
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const submitBtn = document.querySelector('.submit-btn');
+const resetBtn = document.querySelector('.reset-btn');
 
-// homePage.style.marginBottom = '-5em';
+function CheckInputs()
+{
+  let nameTrim = name.value.trim();
+  let emailTrim = email.value.trim();
+  let msgTrim = message.value.trim();
+
+  if (nameTrim && emailTrim && msgTrim) // if something is typed into these elements
+  {
+    submitBtn.style.backgroundColor = 'rgb(224, 240, 227, 0.9)'; 
+    submitBtn.style.color = 'rgba(141, 136, 136)';
+  }
+  else
+  {
+    submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+    submitBtn.style.color = '#ffff';
+  }
+}
+
+name.addEventListener('input', CheckInputs);
+email.addEventListener('input', CheckInputs);
+message.addEventListener('input', CheckInputs);
+
+document.querySelector('form').addEventListener('submit', function() {
+  // revert button color after submit
+  submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+  submitBtn.style.color = '#ffff';
+});
+
+document.querySelector('form').addEventListener('reset', function() {
+  submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+  submitBtn.style.color = '#ffff';
+});
+
+export default app;

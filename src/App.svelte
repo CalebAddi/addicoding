@@ -10,6 +10,9 @@
 <canvas bind:this={el}></canvas>
 <!-- test -->
 <main class="home_container">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
   <header id="header">
     <div class="content">
       <div class="inner">
@@ -165,9 +168,6 @@
         <article id="contact">
           <h2>Contact</h2>
 
-          <p style="font-size: 2.5em; color: orange;">( UNDER CONSTRUCTION )</p>
-
-
           <form method="POST" action="https://formsubmit.co/caleb.addi.77@gmail.com">
             <div class="fields">
               <div class="field half">
@@ -184,13 +184,15 @@
               </div>
             </div>
             <ul class="actions">
-              <li><input type="submit" value="Send Message" class="primary" /></li>
-              <li><input type="reset" value="Reset" /></li>
+              <li><input type="submit" value="Send Message" class="primary submit-btn" style="margin-bottom: 1.7em;"/></li>
+              <li><input type="reset" value="Reset" class="reset-btn"/></li>
             </ul>
           </form>
           <ul class="icons">
-            <li><a href="https://www.linkedin.com/in/caleb-addison-281370211" target="_blank" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-            <li><a href="https://github.com/CalebAddi" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li class="linkIcons"><a href="https://www.linkedin.com/in/caleb-addison-281370211" target="_blank" class="icon brands" style="margin-left: -5em;" id="linkedin-icon">
+              <i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li class="linkIcons"><a href="https://github.com/CalebAddi" target="_blank" class="icon brands" style="margin-right: -5em; margin-top: -1.1em;" id="github-icon">
+                <i class="fa-brands fa-github"></i></a></li>
           </ul>
         </article>
     </div>
