@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npx gh-pages -d dist"
+    "deploy": "npx gh-pages -d dist",
+    "gh-clean": "npx gh-pages-clean"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
