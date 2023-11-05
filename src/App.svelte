@@ -127,19 +127,19 @@
             <h3 style="border-bottom: solid 1px rgb(215, 200, 200, 0.7); padding-bottom: 0.5em; text-shadow: 5px 5px black;">Simple JS Games</h3>
             
             <div class="span_div">
-              <span><a href='/addicoding/src/assets/projects/FirstJSGame/jsgame01.html' target="_blank">
+              <span><a href='assets/projects/FirstJSGame/jsgame01.html' target="_blank">
                 <img class="span_img" src="assets/images/surviveswarm.png" alt="" /></a>
                 <h3 class="h3_lilJS">Survive The Swarm</h3></span>
             </div>
 
             <div class="span_div">
-              <span><a href='/addicoding/src/assets/projects/DiceGame/index.html' target="_blank">
+              <span><a href='assets/projects/DiceGame/index.html' target="_blank">
                 <img class="span_img" src="assets/images/diceroll.png" alt="" /></a>
                 <h3 class="h3_lilJS">Dice Roll (Requires 2 Players)</h3></span>
             </div>
 
 						<div class="span_div">
-              <span><a href='/addicoding/src/assets/projects/GuessMyNumber/index.html' target="_blank">
+              <span><a href='assets/projects/GuessMyNumber/index.html' target="_blank">
                 <img class="span_img" src="assets/images/guessnum.png" alt="" /></a>
                 <h3 class="h3_lilJS">Guess The Number</h3></span>
             </div>
