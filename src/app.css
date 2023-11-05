@@ -234,10 +234,10 @@ main
     width: 450px;
   }
 
-  /* .about-container
+  .about-container
   {
-    width: 600px;
-  } */
+    margin-top: -5.5em;
+  }
 
   .h3_lilJS
   {
