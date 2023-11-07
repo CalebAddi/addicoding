@@ -20,10 +20,12 @@ window.onload = function()
   function HomePageAdjustment(isArticleVisible)
   {
     const homePage = document.querySelector('.home_container');
+    const resumeArticle = document.getElementById('resume');
 
     if (homePage)
     {
       homePage.style.marginBottom = isArticleVisible ? '0' : '-10em';
+      resumeArticle.style.display = isArticleVisible ? 'none' : 'block';
     }
   }
   HomePageAdjustment(false);
