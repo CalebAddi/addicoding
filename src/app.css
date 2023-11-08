@@ -596,6 +596,27 @@ main
     margin-top: 5em;
   }
 
+  @media screen and (max-width: 1220px)
+  {
+    .combat-gif, .ard-gif, .water-gif, .oa-img
+    {
+      margin: 0em;
+    }
+    .combat-txt, .water-txt, .ard-txt, .oa-txt
+    {
+      margin: 0em;
+      width: auto;
+    }
+    .combat-txt, .ard-txt
+    {
+      top: 8em;
+    }
+    .water-txt, .oa-txt
+    {
+      top: 17em;
+    }
+  }
+
   @media screen and (max-width: 1050px)
   {
     .span_img
@@ -612,7 +633,6 @@ main
       font-size: 0;
       visibility: hidden;
     }
-
     .nav-li.longword-li #nav-link::after
     {
       position: relative;
@@ -625,11 +645,15 @@ main
       padding: 1em;
       top: 0.3em;
     }
+    .combat-gif, .water-gif, .ard-gif, .oa-img
+    {
+      width: 100%;
+      height: auto;
+    }
   }
 
   @media screen and (max-width: 600px) 
   {
-    /* Header */
       h1 
       {
         font-size: 2em;
@@ -660,6 +684,15 @@ main
       #nav-link
       {
         line-height: 1.25rem;
+      }
+
+      .combat-txt, .ard-txt
+      {
+        top: 5em;
+      }
+      .water-txt, .oa-txt
+      {
+        top: 15em;
       }
 
     /* Contact */
