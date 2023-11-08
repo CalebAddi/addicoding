@@ -21,8 +21,8 @@
     </div>
     <nav>
       <ul id="nav-btns" class="nav-buttons">
-        <li class="nav-li"><a id="nav-link" href="#professional_work">Professional Work</a></li>
-        <li class="nav-li"><a id="nav-link" href="#personal_work">Personal Projects</a></li>
+        <li class="nav-li longword-li"><a id="nav-link" href="#professional_work" data-text-small="Professional">Professional Work</a></li>
+        <li class="nav-li longword-li"><a id="nav-link" href="#personal_work" data-text-small="Projects">Personal Projects</a></li>
         <li class="nav-li"><a id="nav-link" href="#about">About</a></li>
         <li class="nav-li"><a id="nav-link" href="#contact">Contact</a></li>
       </ul>
