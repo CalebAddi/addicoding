@@ -35,7 +35,7 @@
         <article id="resume">
           <div class="resume_container">
             <h3>Download Resume</h3>
-            <li class="linkIcons"><a href="assets/download/AddiSoftwareEngineerResume.pdf" download class="icon brands" id="resume-icon" style="font-style: 3em;">
+            <li class="linkIcons"><a href="assets/download/AddiGameplayProgramming.pdf" download class="icon brands" id="resume-icon" style="font-style: 3em;">
               <i class="fa-solid fa-arrow-up-from-bracket"></i></a></li>
           </div>
         </article>
