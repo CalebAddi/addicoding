@@ -47,14 +47,14 @@
           <div class="WR_Main">
             <h3>The Wayward Realms</h3>
             <h5 class="skill-tool">Skills/Tools: UE5, Blueprint Scripting, C++</h5>
-            <p> As a Gameplay Programmer for the Wayward Realms, I am in charge of the development of the Water Systems and Combat Systems of the game. 
-              I also assist with the creation of the Dungeon ProcGen System as well as help with any optimization throughout the development cycle. 
+            <p> As a Gameplay Programmer for the Wayward Realms, I am in charge of the development of the Water Systems and Weather Systems of the game. 
+              I also play a part in developing the Stream Loading System that is used to help with optimization throughout the game world. 
             </p>
 
             <div class="wr-combat">
               <div class="combat-txt">
-                <p> The purpose for the combat system is to implement combat that feels like it flows properly and has weight for every impact you make on an enemy. 
-                  Every part of the enemy will have weight to how you kill enemies as well (hitting the AI in the head should do more damage than if it was hit in the shoulder).
+                <p> The purpose for the weather system is to implement weather that makes the world feel like it is constantly changing.
+                  Having the world change in weather conditions and climate depending on the changing of the seasons really makes the world feel alive.
                 </p>
               </div>
               <!-- <img class="combat-gif" src="./src/assets/gifs/Combat_Example.gif" alt="Combat Example"> -->
