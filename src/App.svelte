@@ -58,7 +58,7 @@
                 </p>
               </div>
               <!-- <img class="combat-gif" src="./src/assets/gifs/Combat_Example.gif" alt="Combat Example"> -->
-              <iframe class="combat-gif" src="https://www.youtube.com/embed/THx1fhjyHio?si=l0w9Qc7PED4v8A6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe class="combat-gif" src="https://www.youtube.com/embed/THx1fhjyHio?si=l0w9Qc7PED4v8A6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="water_system">
               <div class="water-txt">
@@ -89,7 +89,7 @@
                 </p>
               </div>
               <div>
-                <iframe class="ard-gif" src="https://www.youtube.com/embed/ac8To4rplk0?si=GERL7MCZkIGWF9vl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="ard-gif" src="https://www.youtube.com/embed/ac8To4rplk0?si=GERL7MCZkIGWF9vl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -119,19 +119,57 @@
         <article id="personal_work">
           <h2>Personal Projects</h2>
 
+          <div class="personalGames-main">
+            <h3 style="border-bottom: solid 1px rgb(215, 200, 200, 0.7); padding-bottom: 0.5em; text-shadow: 5px 5px black;">Prototype Game Projects</h3>
+            
+            <div class="span_div">
+              <span>
+                <div class="project-desc">
+                  <p style="padding-left: 0.5em; padding-right: 0.5em; color:rgb(215, 200, 200, 1); text-shadow: 1px 1px black;">
+                    The White Pages is a horror game that I am working on in my spare time. 
+                    It is inspired by games like Slenderman mixed with the Granny horror game series.
+                    It's still early in development, but so far, I'm utilizing a hybrid approach of both c++ and blueprints together. I have implemented: Modular Interaction System, Advanced AI, Flashlight/Player Character Mechanics,
+                    Randomization Mechanics (Items and Enemy Spawn Locations), Portal System, and Basic Test UI.
+                  </p>
+
+                  <h4 style="padding-top: 2em; padding-bottom: -2em;">
+                    Project Link:  
+                    <a href="https://github.com/CalebAddi/TheWhitePages" target="_blank" class="icon brands" id="github-icon">
+                      <i class="fa-brands fa-github"></i></a>
+                  </h4>
+                </div>
+
+                <iframe style="width: 750px; height: 400px; margin-top: 4em; border: solid 1.5px rgba(215, 200, 200, 0.7);" 
+                src="https://www.youtube.com/embed/1Ynm_oknozI?si=cLNH-_F63IS_jGgD" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <h3 class="h3_lilJS">The White Pages</h3>
+                <p style="padding-left: 0.5em; padding-right: 0.5em; color:rgb(215, 200, 200, 1); text-shadow: 1px 1px black;">
+                  Unreal Engine | C++ | Blueprints
+                </p>
+              </span>
+            </div>
+          </div>
+
           <div class="web_main">
             <h3 style="border-bottom: solid 1px rgb(215, 200, 200, 0.7); padding-bottom: 0.5em; text-shadow: 5px 5px black;">Simple Web Projects</h3>
 
             <div class="span_div">
               <span><a href = 'https://celadon-daifuku-b4fd9b.netlify.app/' target="_blank">
                 <img class="span_img" src="assets/images/shopify.png" alt="Simple-React-Template" /></a>
-                <h3>Admin Dashboard (Using ReactJS)</h3></span>
+                <h3>Admin Dashboard</h3></span>
+                <p style="padding-left: 0.5em; padding-right: 0.5em; color:rgb(215, 200, 200, 1); text-shadow: 1px 1px black;">
+                  React JS
+                </p>
             </div>
 
             <div class="span_div">
               <span><a href = 'https://spiffy-liger-2e0760.netlify.app/' target="_blank">
                 <img class="span_img" src="assets/images/planetearth.png" alt="threejs-globe" /></a>
-                <h3>Earth Charity Hub (Using Three.js)</h3></span>
+                <h3>Earth Charity Hub</h3></span>
+                <p style="padding-left: 0.5em; padding-right: 0.5em; color:rgb(215, 200, 200, 1); text-shadow: 1px 1px black;">
+                  THREE JS
+                </p>
             </div>
           </div>
           <div class="jsGame-main">

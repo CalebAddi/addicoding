@@ -51,14 +51,14 @@ main
     padding-top: 2em;
   }
 
-  h1, h2, h3
+  h1, h2, h3, h4
   {
     font-weight: 600;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(215, 200, 200, 0.88);
   }
 
-  h1, h2, h3
+  h1, h2, h3, h4
   {
     letter-spacing: 2px;
   }
@@ -219,7 +219,7 @@ main
     border: solid 1.5px rgba(215, 200, 200, 0.7);
   }
 
-  .jsGame-main, .web_main
+  .jsGame-main, .web_main, .personalGames-main
   {
     margin-top: 7em;
     margin-bottom: 1em;
