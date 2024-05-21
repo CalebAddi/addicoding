@@ -139,7 +139,7 @@
                   </h4>
                 </div>
 
-                <iframe style="width: 750px; height: 400px; margin-top: 4em; border: solid 1.5px rgba(215, 200, 200, 0.7);" 
+                <iframe class="devclip-vid" 
                 src="https://www.youtube.com/embed/1Ynm_oknozI?si=cLNH-_F63IS_jGgD" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
