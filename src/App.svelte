@@ -35,7 +35,7 @@
         <article id="resume">
           <div class="resume_container">
             <h3>Download Resume</h3>
-            <li class="linkIcons"><a href="assets/download/AddiGameplayProgramming.pdf" download class="icon brands" id="resume-icon" style="font-style: 3em;">
+            <li class="linkIcons"><a href="assets/download/CalebAddiGameResume.pdf" download class="icon brands" id="resume-icon" style="font-style: 3em;">
               <i class="fa-solid fa-arrow-up-from-bracket"></i></a></li>
           </div>
         </article>
@@ -236,7 +236,7 @@
             </ul>
           </form>
           <ul class="icons">
-            <li class="linkIcons"><a href="https://www.linkedin.com/in/caleb-addison-281370211" target="_blank" class="icon brands" style="margin-left: -5em;" id="linkedin-icon">
+            <li class="linkIcons"><a href="https://www.linkedin.com/in/caleb-addi/" target="_blank" class="icon brands" style="margin-left: -5em;" id="linkedin-icon">
               <i class="fa-brands fa-linkedin-in"></i></a></li>
               <li class="linkIcons"><a href="https://github.com/CalebAddi" target="_blank" class="icon brands" style="margin-right: -5em; margin-top: -1.1em;" id="github-icon">
                 <i class="fa-brands fa-github"></i></a></li>

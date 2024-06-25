@@ -158,11 +158,19 @@ main
 
   .WR_Main
   {
+    border: solid 1.5px rgba(215, 200, 200, 0.7);
+    box-shadow: 10px 10px black;
+    margin-bottom: 1.5em;
+    padding: 1em;
     margin-top: 5em;
   }
 
   .Ard_Main
   {
+    border: solid 1.5px rgba(215, 200, 200, 0.7);
+    box-shadow: 10px 10px black;
+    margin-bottom: 1.5em;
+    padding: 1em;
     margin-top: 10em;
   }
 
@@ -185,6 +193,10 @@ main
 
   .OA_Main
   {
+    border: solid 1.5px rgba(215, 200, 200, 0.7);
+    box-shadow: 10px 10px black;
+    margin-bottom: 1.5em;
+    padding: 1em;
     margin-top: 7em;
   }
 
@@ -623,6 +635,11 @@ main
     {
       top: 17em;
     }
+
+    .WR_Main, .OA_Main
+    {
+      padding-bottom: 7em;
+    }
   }
 
   @media screen and (max-width: 1050px)
@@ -636,6 +653,10 @@ main
     {
       max-width: 100%;
       height: 250px;
+    }
+    .ard-txt
+    {
+      top: 10em;
     }
   }
 
@@ -662,6 +683,16 @@ main
     {
       width: 100%;
       height: auto;
+    }
+
+    .ard-container
+    {
+      margin-top: 6em;
+    }
+
+    .oa-container
+    {
+      margin-top: -3em;
     }
   }
 
@@ -701,11 +732,11 @@ main
 
       .combat-txt, .ard-txt
       {
-        top: 5em;
+        top: 6.5em;
       }
       .water-txt, .oa-txt
       {
-        top: 15em;
+        top: 16.5em;
       }
 
     /* Contact */
