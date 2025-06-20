@@ -1,119 +1,124 @@
-import './app.css';
-import App from './App.svelte';
+// import './app.css';
+import { mount } from 'svelte'
+import App from './App.svelte'
 
-const app = new App({
-  target: document.getElementById('app'),
-});
+const app = mount(App, {
+    target: document.getElementById('app'),
+})
 
-window.onload = function()
-{
-  const articles = document.querySelectorAll('article');
-  let currVisibleArticle = null;
+export default app
 
-  articles.forEach(article => 
-  {
-    article.style.display = 'none';
-  });
 
-  const navLinks = document.querySelectorAll('.nav-li a');
 
-  function HomePageAdjustment(isArticleVisible)
-  {
-    const homePage = document.querySelector('.home_container');
-    const resumeArticle = document.getElementById('resume');
+// window.onload = function()
+// {
+//   const articles = document.querySelectorAll('article');
+//   let currVisibleArticle = null;
 
-    if (homePage)
-    {
-      homePage.style.marginBottom = isArticleVisible ? '0' : '-10em';
-      resumeArticle.style.display = isArticleVisible ? 'none' : 'block';
-    }
-  }
-  HomePageAdjustment(false);
+//   articles.forEach(article => 
+//   {
+//     article.style.display = 'none';
+//   });
 
-  navLinks.forEach(link =>
-  {
-    link.addEventListener('click', function(e)
-    {
-      e.preventDefault();
+//   const navLinks = document.querySelectorAll('.nav-li a');
 
-      articles.forEach(article =>
-      {
-        article.style.display = 'none';
-      });
+//   function HomePageAdjustment(isArticleVisible)
+//   {
+//     const homePage = document.querySelector('.home_container');
+//     const resumeArticle = document.getElementById('resume');
 
-      HomePageAdjustment(false); //no articles available to show
+//     if (homePage)
+//     {
+//       homePage.style.marginBottom = isArticleVisible ? '0' : '-10em';
+//       resumeArticle.style.display = isArticleVisible ? 'none' : 'block';
+//     }
+//   }
+//   HomePageAdjustment(false);
 
-      const navID = this.getAttribute('href').slice(1); //Getting the id from the href attribute
-      const clickedArticle = document.getElementById(navID);
-      const navBtns = document.querySelector('.nav-buttons');
+//   navLinks.forEach(link =>
+//   {
+//     link.addEventListener('click', function(e)
+//     {
+//       e.preventDefault();
 
-      // Hide current visible article if we click on the link again
-      if (clickedArticle)
-      {
-        if (clickedArticle === currVisibleArticle)
-        {
-          clickedArticle.style.display = 'none';
-          currVisibleArticle = null;
-          HomePageAdjustment(false);
+//       articles.forEach(article =>
+//       {
+//         article.style.display = 'none';
+//       });
 
-          if (navID === 'about' && navBtns)
-          {
-            navBtns.style.marginLeft = '';
-          }
-        }
-        else
-        {
-          if (currVisibleArticle)
-          {
-            currVisibleArticle.style.display = 'none';
-          }
+//       HomePageAdjustment(false); //no articles available to show
 
-          clickedArticle.style.display = 'block';
-          currVisibleArticle = clickedArticle;
-          HomePageAdjustment(true); // articles are now visible
-        }
-      }
-    });
-  });
-}
+//       const navID = this.getAttribute('href').slice(1); //Getting the id from the href attribute
+//       const clickedArticle = document.getElementById(navID);
+//       const navBtns = document.querySelector('.nav-buttons');
 
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const submitBtn = document.querySelector('.submit-btn');
-const resetBtn = document.querySelector('.reset-btn');
+//       // Hide current visible article if we click on the link again
+//       if (clickedArticle)
+//       {
+//         if (clickedArticle === currVisibleArticle)
+//         {
+//           clickedArticle.style.display = 'none';
+//           currVisibleArticle = null;
+//           HomePageAdjustment(false);
 
-function CheckInputs()
-{
-  let nameTrim = name.value.trim();
-  let emailTrim = email.value.trim();
-  let msgTrim = message.value.trim();
+//           if (navID === 'about' && navBtns)
+//           {
+//             navBtns.style.marginLeft = '';
+//           }
+//         }
+//         else
+//         {
+//           if (currVisibleArticle)
+//           {
+//             currVisibleArticle.style.display = 'none';
+//           }
 
-  if (nameTrim && emailTrim && msgTrim) // if something is typed into these elements
-  {
-    submitBtn.style.backgroundColor = 'rgb(224, 240, 227, 0.9)'; 
-    submitBtn.style.color = 'rgba(141, 136, 136)';
-  }
-  else
-  {
-    submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
-    submitBtn.style.color = '#ffff';
-  }
-}
+//           clickedArticle.style.display = 'block';
+//           currVisibleArticle = clickedArticle;
+//           HomePageAdjustment(true); // articles are now visible
+//         }
+//       }
+//     });
+//   });
+// }
 
-name.addEventListener('input', CheckInputs);
-email.addEventListener('input', CheckInputs);
-message.addEventListener('input', CheckInputs);
+// const name = document.getElementById('name');
+// const email = document.getElementById('email');
+// const message = document.getElementById('message');
+// const submitBtn = document.querySelector('.submit-btn');
+// const resetBtn = document.querySelector('.reset-btn');
 
-document.querySelector('form').addEventListener('submit', function() {
-  // revert button color after submit
-  submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
-  submitBtn.style.color = '#ffff';
-});
+// function CheckInputs()
+// {
+//   let nameTrim = name.value.trim();
+//   let emailTrim = email.value.trim();
+//   let msgTrim = message.value.trim();
 
-document.querySelector('form').addEventListener('reset', function() {
-  submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
-  submitBtn.style.color = '#ffff';
-});
+//   if (nameTrim && emailTrim && msgTrim) // if something is typed into these elements
+//   {
+//     submitBtn.style.backgroundColor = 'rgb(224, 240, 227, 0.9)'; 
+//     submitBtn.style.color = 'rgba(141, 136, 136)';
+//   }
+//   else
+//   {
+//     submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+//     submitBtn.style.color = '#ffff';
+//   }
+// }
 
-export default app;
+// name.addEventListener('input', CheckInputs);
+// email.addEventListener('input', CheckInputs);
+// message.addEventListener('input', CheckInputs);
+
+// document.querySelector('form').addEventListener('submit', function() {
+//   // revert button color after submit
+//   submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+//   submitBtn.style.color = '#ffff';
+// });
+
+// document.querySelector('form').addEventListener('reset', function() {
+//   submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+//   submitBtn.style.color = '#ffff';
+// });
+
+// export default app;
