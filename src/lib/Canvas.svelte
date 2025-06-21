@@ -4,8 +4,9 @@
     import * as THREE from "three";
     import createLighting from "./components/scripts/lighting";
     import windowResizeHandler from "./components/scripts/windowResizeHandler";
-    import { mouseEventHandler, handleObjectMovement } from "./components/scripts/mouseEventHandler";
+    import mouseEventHandler from "./components/scripts/mouseEventHandler";
     import setStarfield from "./components/scripts/starfield";
+    import handleObjectMovement from "./components/scripts/objectMoveHandler";
 
     const scene = new THREE.Scene();
     let container, animId, renderer, starfield, cleanMouseEvents, cleanResizeEvents, cleanObjMovement = null;
@@ -14,6 +15,7 @@
     // Performance tracking
     let lastTime = 0;
     const targetFps = 1000 / 60;
+    const clock = new THREE.Clock();
 
     onMount(() => {
         try
@@ -49,6 +51,9 @@
                 container.appendChild(renderer.domElement);
             }
 
+            // Object Movement
+            cleanObjMovement = handleObjectMovement(mouse, icoMesh, starfield, clock);
+
             // Animate
             function animate(time)
             {
@@ -62,13 +67,15 @@
                 }
                 lastTime = time;
 
+                if (cleanObjMovement && cleanObjMovement.update)
+                {
+                    cleanObjMovement.update();
+                }
+
                 composer.render();
                 animId = requestAnimationFrame(animate);
             }
             animate(0);
-
-            // Object Movement
-            cleanObjMovement = handleObjectMovement(mouse, icoMesh, starfield);
 
             // Resize Window
             cleanResizeEvents = windowResizeHandler(camera, renderer, composer);
@@ -89,6 +96,7 @@
             renderer?.dispose();
             cleanResizeEvents?.();
             cleanMouseEvents?.();
+            cleanObjMovement?.cleanup?.();
             scene?.clear();
 
             [container, animId, renderer, starfield, cleanMouseEvents, cleanResizeEvents, cleanObjMovement] = Array(7).fill(null);
@@ -107,6 +115,8 @@
 <style>
     .canvas-container
     {
+        z-index: 0;
+        position: absolute;
         overflow: hidden;
     }
 </style>

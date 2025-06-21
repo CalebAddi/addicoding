@@ -6,10 +6,10 @@ export default function setStarfield(scene)
     const geometry = new BufferGeometry();
     const material = new PointsMaterial({
         color: 0x888888,
-        size: 0.025,
+        size: 0.055,
         sizeAttenuation: true
     });
-    const starCount = 55000;
+    const starCount = 7000;
     const starPos = new Float32Array(starCount * 3);
     const starfield = new Points(geometry, material);
 
