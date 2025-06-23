@@ -9,9 +9,9 @@
 <style>
     .resume_container
     {
+        display: grid;
         justify-content: center;
         align-items: center;
-        display: grid;
         margin-top: 35em;
     }
 
@@ -26,7 +26,7 @@
     {
         .resume_container
         {
-            margin-top: 30em;
+            margin-top: 29.5em;
         }
     }
     @media (max-width: 420px)
