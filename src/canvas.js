@@ -1,130 +1,112 @@
-import * as THREE from 'three';
-import { Color } from 'three';
-import './app.css';
-
-const scene = new THREE.Scene();
-scene.background = new Color('#1b1c1e');
-
-const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
-let renderer; 
-
-//---------- Geometry ----------//
-const geometry = new THREE.IcosahedronGeometry(1.7, 1);
-const geomMaterial = new THREE.MeshBasicMaterial( {color: 0xffffff, wireframe: true} );
-const icosahedron = new THREE.Mesh(geometry, geomMaterial);
-scene.add(icosahedron);
-
-//---------- Materials ----------//
-
-const particlesGeometry = new THREE.BufferGeometry;
-const particleCount = 20000;
-const posArray = new Float32Array(particleCount * 3);
-
-for(let i = 0; i < particleCount * 3; i++) 
+window.onload = function()
 {
-  posArray[i] = (Math.random() - 0.5) * 6;
+  const articles = document.querySelectorAll('article');
+  let currVisibleArticle = null;
+
+  articles.forEach(article => 
+  {
+    article.style.display = 'none';
+  });
+
+  const navLinks = document.querySelectorAll('.nav-li a');
+
+  function HomePageAdjustment(isArticleVisible)
+  {
+    const homePage = document.querySelector('.home_container');
+    const resumeArticle = document.getElementById('resume');
+
+    if (homePage)
+    {
+      homePage.style.marginBottom = isArticleVisible ? '0' : '-10em';
+      resumeArticle.style.display = isArticleVisible ? 'none' : 'block';
+    }
+  }
+  HomePageAdjustment(false);
+
+  navLinks.forEach(link =>
+  {
+    link.addEventListener('click', function(e)
+    {
+      e.preventDefault();
+
+      articles.forEach(article =>
+      {
+        article.style.display = 'none';
+      });
+
+      HomePageAdjustment(false); //no articles available to show
+
+      const navID = this.getAttribute('href').slice(1); //Getting the id from the href attribute
+      const clickedArticle = document.getElementById(navID);
+      const navBtns = document.querySelector('.nav-buttons');
+
+      // Hide current visible article if we click on the link again
+      if (clickedArticle)
+      {
+        if (clickedArticle === currVisibleArticle)
+        {
+          clickedArticle.style.display = 'none';
+          currVisibleArticle = null;
+          HomePageAdjustment(false);
+
+          if (navID === 'about' && navBtns)
+          {
+            navBtns.style.marginLeft = '';
+          }
+        }
+        else
+        {
+          if (currVisibleArticle)
+          {
+            currVisibleArticle.style.display = 'none';
+          }
+
+          clickedArticle.style.display = 'block';
+          currVisibleArticle = clickedArticle;
+          HomePageAdjustment(true); // articles are now visible
+        }
+      }
+    });
+  });
 }
 
-particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const submitBtn = document.querySelector('.submit-btn');
+const resetBtn = document.querySelector('.reset-btn');
 
-const particleMaterial = new THREE.PointsMaterial({
-    size: .0035,
-    blending: THREE.AdditiveBlending,
+function CheckInputs()
+{
+  let nameTrim = name.value.trim();
+  let emailTrim = email.value.trim();
+  let msgTrim = message.value.trim();
+
+  if (nameTrim && emailTrim && msgTrim) // if something is typed into these elements
+  {
+    submitBtn.style.backgroundColor = 'rgb(224, 240, 227, 0.9)'; 
+    submitBtn.style.color = 'rgba(141, 136, 136)';
+  }
+  else
+  {
+    submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+    submitBtn.style.color = '#ffff';
+  }
+}
+
+name.addEventListener('input', CheckInputs);
+email.addEventListener('input', CheckInputs);
+message.addEventListener('input', CheckInputs);
+
+document.querySelector('form').addEventListener('submit', function() {
+  // revert button color after submit
+  submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+  submitBtn.style.color = '#ffff';
 });
 
-particleMaterial.color = new THREE.Color(0xffffff);
+document.querySelector('form').addEventListener('reset', function() {
+  submitBtn.style.backgroundColor = 'rgba(141, 136, 136, 0.8)';
+  submitBtn.style.color = '#ffff';
+});
 
-// Mesh
-const particleMesh = new THREE.Points(particlesGeometry, particleMaterial);
-scene.add(particleMesh);
-
-camera.position.z = 3.3;
-
-const sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight
-};
-
-function resize()
-{
-    // Update sizes
-    sizes.width = window.innerWidth
-    sizes.height = window.innerHeight
-
-    // Update camera
-    camera.aspect = sizes.width / sizes.height
-    camera.updateProjectionMatrix()
-
-    // Update renderer
-    renderer.setSize(sizes.width, sizes.height)
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-}
-
-function animate() 
-{
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-}
-
-//---------------------------------------------------------//
-
-document.addEventListener('mousemove', onDocumentMouseMove);
-
-let mouseX = 0;
-let mouseY = 0;
-let targetX = 0;
-let targetY = 0;
-let icosTargetX = 0;
-let icosTargetY = 0;
-
-const windowHalfX = window.innerWidth / 2;
-const windowHalfY = window.innerHeight / 2;
-
-function onDocumentMouseMove(e) 
-{
-    mouseX = (e.clientX - windowHalfX);
-    mouseY = (e.clientY - windowHalfY);
-}
-
-const clock = new THREE.Clock()
-
-let oldTime = 0;
-const sensitivity = 0.000095;
-const icosSensitivity = 0.0004;
-
-const tick = () =>
-{
-    const elapsedTime = clock.getElapsedTime();
-    const deltaTime = elapsedTime - oldTime;
-    oldTime = elapsedTime;
-
-    // calculate particle targets
-    targetX += (mouseX - targetX) * deltaTime * sensitivity;
-    targetY += (mouseY - targetY) * deltaTime * sensitivity;
-
-    //calculate icosahedron targets
-    icosTargetX += (mouseX - icosTargetX) * deltaTime * icosSensitivity;
-    icosTargetY += (mouseY - icosTargetY) * deltaTime * icosSensitivity;
-
-    // Update objects
-    particleMesh.rotation.y = targetY;
-    particleMesh.rotation.x = targetX;
-    icosahedron.rotation.y = icosTargetY;
-    icosahedron.rotation.x = icosTargetX;
-
-    // Render
-    renderer.render(scene, camera);
-
-    // Call tick again on the next frame
-    window.requestAnimationFrame(tick);
-}
-
-export const createScene = (el) => 
-{
-    renderer = new THREE.WebGLRenderer({ antialias: true, canvas: el, alpha: true }); // alpha: true to make the canvas background transparent.
-    renderer.setSize(window.innerWidth, window.innerHeight); // this should cover the full window
-    renderer.setPixelRatio(window.devicePixelRatio);
-    resize();
-    animate();
-    tick();
-}
+export default app;
