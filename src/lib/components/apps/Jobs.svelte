@@ -17,9 +17,13 @@
             });
         }, { threshold: 0.1 });
 
-        const jobSection = document.querySelector('.jobs-container');
+        const checkObserveJob = () => {
+            const jobSection = document.querySelector('.jobs-container');
+            if (jobSection) observer.observe(jobSection);
+        };
 
-        if (jobSection) observer.observe(jobSection);
+        // Set delay to ensure navigation fully loads before lazy loading
+        setTimeout(checkObserveJob, 30);
         return () => observer.disconnect();
     });
 
@@ -291,7 +295,7 @@
     }
 }
 
-@media screen and (max-width: 1050px)
+@media screen and (max-width: 1000px)
 {
     .ard-txt
     {

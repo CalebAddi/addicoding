@@ -3,6 +3,9 @@
     import Navbar from './lib/components/apps/Navbar.svelte';
     import Resume from './lib/components/apps/Resume.svelte';
     import Jobs from './lib/components/apps/Jobs.svelte';
+    import Personal from './lib/components/apps/Personal.svelte';
+    import About from './lib/components/apps/About.svelte';
+    import Contact from './lib/components/apps/Contact.svelte';
 
     import { onMount, onDestroy } from "svelte";
     import siteNavigation from "./lib/components/scripts/navigation";
@@ -54,6 +57,21 @@
         <article id="professional_work">
             <Jobs />
         </article>
+
+        <!-- Personal Work -->
+        <article id="personal_work">
+            <Personal />
+        </article>
+
+        <!-- About -->
+        <article id="about">
+            <About />
+        </article>
+
+        <!-- Contact -->
+        <article id="contact">
+            <Contact />
+        </article>
     </div>
 
     <!-- Three.js Background Canvas -->
@@ -88,7 +106,7 @@
         #professional_work, #personal_work, #about, #contact
     {
         display: grid;
-        margin-top: 5em;
+        margin-top: 2em;
         z-index: 1;
         backdrop-filter: blur(5px);
     }

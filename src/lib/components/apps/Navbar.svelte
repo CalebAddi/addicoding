@@ -16,16 +16,10 @@
     </header>
 </main>
 
-<style>
-    li
-    {
-        list-style: none;
-    }
-
-    
+<style>    
     .nav-container
     {
-        margin-top: 8.5em;
+        margin-top: 7.5em;
         padding-top: 5em;
         padding-bottom: 14em;
         background-color: rgba(24, 32, 41, 0.35);
