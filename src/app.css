@@ -187,8 +187,7 @@ input[type="reset"].reset-btn:focus
 
 input[type="submit"].submit-btn
 {
-    transition: background-color 1.5s ease;
-    background-color: rgba(141, 136, 136, 0.8);
+    transition: background-color 0.3s ease, transform 0.7s ease !important;
 }
 
 input[type="submit"].submit-btn:hover,
