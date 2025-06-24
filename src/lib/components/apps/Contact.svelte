@@ -109,3 +109,161 @@
         </ul>
     </section>
 </main>
+
+<style>
+    form 
+    {
+        margin: 0 0 2rem 0;
+    }
+
+    form > :last-child 
+    {
+        margin-bottom: 0;
+    }
+
+    form > .fields 
+    {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: calc(100% + 0.001rem);
+        margin: -1.5rem 0 2rem -1.5rem;
+    }
+
+    label 
+    {
+        color: rgb(215, 200, 200, 0.9);
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        line-height: 1.5;
+        margin: 0 0 1rem 0;
+        text-transform: uppercase;
+    }
+
+    form > .fields > .field 
+    {
+        -moz-flex-grow: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-grow: 0;
+        flex-grow: 0;
+        -moz-flex-shrink: 0;
+        -webkit-flex-shrink: 0;
+        -ms-flex-shrink: 0;
+        flex-shrink: 0;
+        padding: 1.5rem 0 0 1.5rem;
+        width: calc(100% - 1.5rem);
+    }
+
+    form > .fields > .field.half 
+    {
+        width: calc(50% - 0.75rem);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea 
+    {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        background-color: transparent;
+        border-radius: 4px;
+        border: solid 1px #ffffff;
+        color: inherit;
+        display: block;
+        outline: 0;
+        padding: 0 1rem;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    input[type="text"]:invalid,
+    input[type="email"]:invalid,
+    textarea:invalid 
+    {
+        box-shadow: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus 
+    {
+        background: rgba(255, 255, 255, 0.075);
+        border-color: #ffffff;
+        box-shadow: 0 0 0 1px #ffffff;
+    }
+
+    input[type="submit"].submit-btn,
+    input[type="reset"].reset-btn
+    {
+        transition: transform .7s ease;
+        padding: 0.62em;
+        background-color: rgba(141, 136, 136, 0.8);
+    }
+
+    input[type="submit"].submit-btn:focus,
+    input[type="reset"].reset-btn:focus
+    {
+        padding: 0.8em;
+        background: rgba(255, 255, 255, 0.075);
+    }
+
+    input[type="submit"].submit-btn
+    {
+        transition: background-color 0.3s ease, transform 0.7s ease !important;
+    }
+
+    input[type="submit"].submit-btn:hover,
+    input[type="reset"].reset-btn:hover 
+    {
+        transform: scale(1.1);
+    }
+
+    input[type="text"],
+    input[type="email"]
+    {
+        height: 2.75rem;
+    }
+
+    textarea 
+    {
+        padding: 0.75rem 1rem;
+    }
+
+    ::-webkit-input-placeholder 
+    {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1.0;
+    }
+
+    :-moz-placeholder 
+    {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1.0;
+    }
+
+    ::-moz-placeholder 
+    {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1.0;
+    }
+
+    :-ms-input-placeholder 
+    {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1.0;
+    }
+</style>
