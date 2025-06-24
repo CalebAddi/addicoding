@@ -49,121 +49,10 @@ h3
     letter-spacing: 1.2px;
 }
 
-.skill-tool
+.about-container
 {
-    margin-top: -0.95em;
-    margin-bottom: 4em;
-    font-size: .85em;
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 1.4px;
-    color: rgb(215, 200, 200, 0.88);
-}
-
-.combat-gif, .water-gif, .ard-gif, .oa-img
-{
-    position: relative;
-    width: 400px;
-    height: 225px;
-    border: solid 1.5px rgba(215, 200, 200, 0.7);
-    box-shadow: 5px 5px black;
-}
-
-.wr-combat
-{
-    margin-top: 10em;
-}
-
-.combat-gif
-{
-    margin-left: 40em;
-    top: -12em;
-}
-
-  .combat-txt
-  {
-    position: relative;
-    width: 450px;
-  }
-
-  .water_system
-  {
-    margin-top: -5em;
-  }
-
-  .water-gif
-  {
-    top: -6em;
-    margin-right: 42em;
-  }
-
-  .water-txt, .oa-txt
-  {
-    position: relative;
-    margin-left: 40em;
-    top: 7em;
-    width: 450px;
-}
-
-  .WR_Main
-  {
-    border: solid 1.5px rgba(215, 200, 200, 0.7);
-    box-shadow: 10px 10px black;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    margin-top: 5em;
-  }
-
-  .Ard_Main
-  {
-    border: solid 1.5px rgba(215, 200, 200, 0.7);
-    box-shadow: 10px 10px black;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    margin-top: 10em;
-  }
-
-  .ard-container
-  {
-    margin-top: 12em;
-  }
-
-  .ard-gif
-  {
-    margin-left: 40em;
-    top: -12em;
-  }
-
-  .ard-txt
-  {
-    position: relative;
-    width: 450px;
-  }
-
-  .OA_Main
-  {
-    border: solid 1.5px rgba(215, 200, 200, 0.7);
-    box-shadow: 10px 10px black;
-    margin-bottom: 1.5em;
-    padding: 1em;
-    margin-top: 7em;
-  }
-
-  .oa-container
-  {
-    margin-top: 6em;
-  }
-
-  .oa-img
-  {
-    top: -6em;
-    margin-right: 42em;
-  }
-
-  .about-container
-  {
     margin-top: -5.5em;
-  }
+}
 
   .span_div
   {
@@ -533,149 +422,86 @@ h3
   }
 /* End Form */
 
-  article
-  {
-    z-index: 1;
-    position: relative;
-  }
-
-  #professional_work, #personal_work, #about, #contact
-  {
-    justify-content: center;
-    display: grid;
-    align-items: center;
-    margin-top: 5em;
-  }
-
-  @media screen and (max-width: 1220px)
-  {
-    .combat-gif, .ard-gif, .water-gif, .oa-img
-    {
-      margin: 0em;
-    }
-    .combat-txt, .water-txt, .ard-txt, .oa-txt
-    {
-      margin: 0em;
-      width: auto;
-    }
-    .combat-txt, .ard-txt
-    {
-      top: 8em;
-    }
-    .water-txt, .oa-txt
-    {
-      top: 17em;
-    }
-
-    .WR_Main, .OA_Main
-    {
-      padding-bottom: 7em;
-    }
-  }
-
-  @media screen and (max-width: 1050px)
-  {
+@media screen and (max-width: 1050px)
+{
     .span_img
     {
-      max-width: 100%;
-      height: auto;
+        max-width: 100%;
+        height: auto;
     }
     .devclip-vid
     {
-      max-width: 100%;
-      height: 250px;
+        max-width: 100%;
+        height: 250px;
     }
-    .ard-txt
-    {
-      top: 10em;
-    }
-  }
+}
 
-  @media screen and (max-width: 860px)
-  {
-    .combat-gif, .water-gif, .ard-gif, .oa-img
+@media screen and (max-width: 860px)
+{
+    h1
     {
-      width: 100%;
-      height: auto;
+        font-size: 2.5em;
     }
+}
 
-    .ard-container
+@media screen and (max-width: 600px) 
+{
+    h1 
     {
-      margin-top: 6em;
-    }
-
-    .oa-container
-    {
-      margin-top: -3em;
-    }
-  }
-
-  @media screen and (max-width: 600px) 
-  {
-      h1 
-      {
         font-size: 2em;
-      }
-      h5, p
-      {
-        font-size: 0.7em;
-      }
+    }
 
-      .combat-txt, .ard-txt
-      {
-        top: 6.5em;
-      }
-      .water-txt, .oa-txt
-      {
-        top: 16.5em;
-      }
+    h5, p
+    {
+        font-size: 0.7em;
+    }
 
     /* Contact */
-      form
-      {
+    form
+    {
         margin-left: -3.5em;
-      }
+    }
 
-			form > .fields 
-      {
-				width: calc(100% + 3rem);
-				margin: -1.5rem 0 2rem -1.5rem;
-			}
+	form > .fields 
+    {
+		width: calc(100% + 3rem);
+		margin: -1.5rem 0 2rem -1.5rem;
+	}
 
-				form > .fields > .field 
-        {
-					padding: 1.5rem 0 0 1.5rem;
-					width: calc(100% - 1.5rem);
-				}
+    form > .fields > .field 
+    {
+		padding: 1.5rem 0 0 1.5rem;
+		width: calc(100% - 1.5rem);
+	}
 
-					form > .fields > .field.half 
-          {
-						width: calc(100% - 1.5rem);
-					}
+	form > .fields > .field.half 
+    {
+		width: calc(100% - 1.5rem);
+	}
 
-					form > .fields > .field.third 
-          {
-						width: calc(100% - 1.5rem);
-					}
+	form > .fields > .field.third 
+    {
+		width: calc(100% - 1.5rem);
+	}
 
-					form > .fields > .field.quarter 
-          {
-						width: calc(100% - 1.5rem);
-					}
-		}
-  
-  @media screen and (max-width: 480px)
-  {
+	form > .fields > .field.quarter 
+    {
+		width: calc(100% - 1.5rem);
+	}
+}
+
+@media screen and (max-width: 480px)
+{
     h2
     {
-      font-size: 1.8em;
+        font-size: 1.8em;
     }
     h3
     {
-      font-size: 1.2em;
+        font-size: 1.2em;
     }
     h5, p
     {
-      font-size: 0.4em;
+        font-size: 0.4em;
     }
-  }
+}

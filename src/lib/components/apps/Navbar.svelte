@@ -1,24 +1,8 @@
-<script>
-    import { onMount } from "svelte";
-    import siteNavigation from "../scripts/navigation";
-
-    onMount(() => {
-        try
-        {
-            siteNavigation();
-        }
-        catch (error)
-        {
-            console.error("Error initializing site navigation: ", error);
-        }
-    })
-</script>
-
 <main class="nav-container">
     <header id="header" class="header-container">
         <div class="content">
             <div class="inner">
-                <h1>Dive Into My Portfolio</h1>
+                <h1 class="home-title">Dive Into My Portfolio</h1>
             </div>
         </div>
         <nav>
@@ -41,17 +25,11 @@
     
     .nav-container
     {
-        margin-top: 9.5em;
-        padding-bottom: 12em;
+        margin-top: 8.5em;
+        padding-top: 5em;
+        padding-bottom: 14em;
         background-color: rgba(24, 32, 41, 0.35);
         border: solid 2.5px rgba(215, 200, 200, 0.7);
-    }
-    
-    .header-container
-    {
-        margin-top: 3.5em;
-        padding-top: 2em;
-        padding-bottom: 2em;
     }
 
     .nav-buttons

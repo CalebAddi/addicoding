@@ -12,28 +12,6 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        margin-top: 35em;
-    }
-
-    @media (max-width: 635px)
-    {
-        .resume_container
-        {
-            margin-top: 38em;
-        }
-    }
-    @media (max-width: 600px)
-    {
-        .resume_container
-        {
-            margin-top: 29.5em;
-        }
-    }
-    @media (max-width: 420px)
-    {
-        .resume_container
-        {
-            margin-top: 33em;
-        }
+        margin-top: -13em;
     }
 </style>

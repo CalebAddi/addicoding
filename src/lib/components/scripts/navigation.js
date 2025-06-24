@@ -1,72 +1,129 @@
+import { linear } from "svelte/easing";
+
 //@ts-nocheck
 export default function siteNavigation()
 {
-    const articles = document.querySelectorAll('article');
+    const elements = {
+        articles: document.querySelectorAll('article'),
+        navLinks: document.querySelectorAll('.nav-li a'),
+        appContainer: document.querySelectorAll('.app-container'),
+        resumeArticle: document.getElementById('resume'),
+        navButtons: document.querySelector('.nav-buttons')
+    };
+
     let currVisibleArticle = null;
+    let isInitialized = false;
 
-    articles.forEach(article => 
+    // Validate element existence
+    if (!elements.articles.length || !elements.navLinks.length)
     {
-        article.style.display = 'none';
-    });
+        console.warn('Navigation: Required DOM elements are missing');
+        return;
+    }
 
-    const navLinks = document.querySelectorAll('.nav-li a');
-
-    function HomePageAdjustment(isArticleVisible)
+    // Initialize articles visibility
+    function initArticles()
     {
-        const homePage = document.querySelector('.app-container');
-        const resumeArticle = document.getElementById('resume');
+        const fragment = document.createDocumentFragment();
 
-        if (homePage)
+        elements.articles.forEach(article => {
+            if (article.id !== 'resume') article.style.display = 'none';
+        });
+
+        adjustHomePage(false);
+        isInitialized = true;
+    }
+
+    // Home page layout adjustment
+    function adjustHomePage(isArticleVisible)
+    {
+        if (!elements.appContainer || !elements.resumeArticle) return;
+
+        elements.appContainer[0].classList.toggle('article-active', isArticleVisible);
+        elements.resumeArticle.style.display = isArticleVisible ? 'none' : 'block';
+    }
+
+    // Show the targeted article and hide others
+    function showArticle(targetArticle)
+    {
+        // Hide all articles except home
+        elements.articles.forEach(article => {
+            if (article.id !== 'resume') article.style.display = 'none';
+        });
+
+        if (targetArticle && targetArticle.id !== 'resume')
         {
-            homePage.style.marginBottom = isArticleVisible ? '0' : '-10em';
-            resumeArticle.style.display = isArticleVisible ? 'none' : 'block';
+            targetArticle.style.display = 'block';
+            currVisibleArticle = targetArticle;
+            adjustHomePage(true);
         }
     }
-    HomePageAdjustment(false);
 
-    navLinks.forEach(link =>
+    // Hide all articles and return to home view
+    function hideAllArticles()
     {
-        link.addEventListener('click', function(e)
-        {
-            e.preventDefault();
-
-            articles.forEach(article =>
-            {
-                article.style.display = 'none';
-            });
-
-            HomePageAdjustment(false); //no articles available to show
-
-            const navID = this.getAttribute('href').slice(1); //Getting the id from the href attribute
-            const clickedArticle = document.getElementById(navID);
-            const navBtns = document.querySelector('.nav-buttons');
-
-            // Hide current visible article if we click on the link again
-            if (clickedArticle)
-            {
-                if (clickedArticle === currVisibleArticle)
-                {
-                    clickedArticle.style.display = 'none';
-                    currVisibleArticle = null;
-                    HomePageAdjustment(false);
-
-                    if (navID === 'about' && navBtns)
-                    {
-                        navBtns.style.marginLeft = '';
-                    }
-                }
-                else
-                {
-                    if (currVisibleArticle)
-                    {
-                        currVisibleArticle.style.display = 'none';
-                    }
-
-                    clickedArticle.style.display = 'block';
-                    currVisibleArticle = clickedArticle;
-                    HomePageAdjustment(true); // articles are now visible
-                }
-            }
+        elements.articles.forEach(article => {
+            if (article.id !== 'resume') article.style.display = 'none';
         });
-    });
+
+        currVisibleArticle = null;
+        adjustHomePage(false);
+    }
+
+    // Navigation link click handle
+    function navClickHandler(e)
+    {
+        e.preventDefault();
+
+        const targId = e.currentTarget.getAttribute('href').slice(1);
+
+        if (!targId) return;
+
+        const targArticle = document.getElementById(targId);
+
+        // Toggle visibility if clicking the same article again
+        if (targArticle === currVisibleArticle)
+        {
+            hideAllArticles();
+            return;
+        }
+
+        // Show new article
+        if (targArticle) showArticle(targArticle);
+    }
+
+    function attachEventListeners()
+    {
+        elements.navLinks.forEach(link => {
+            link.addEventListener('click', navClickHandler, {passive: false});
+        });
+    }
+
+    function removeEventListeners()
+    {
+        elements.navLinks.forEach(link => {
+            link.removeEventListener('click', navClickHandler);
+        });
+    }
+
+    // Cleanup method
+    function cleanup()
+    {
+        removeEventListeners();
+        currVisibleArticle = null;
+        isInitialized = false;
+    }
+
+    // Initialize navigation
+    try
+    {
+        initArticles();
+        attachEventListeners();
+        return cleanup;
+    }
+    catch (error)
+    {
+        console.error('Navigation initialization failed: ', error);
+        return null;
+    }
 }
