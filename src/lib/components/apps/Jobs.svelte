@@ -57,7 +57,7 @@
             <div class="video-wrapper">
                 <iframe 
                     class="media-iframe combat-gif" 
-                    data-src="https://www.youtube.com/embed/THx1fhjyHio?si=l0w9Qc7PED4v8A6M" 
+                    data-src="https://www.youtube.com/embed/r3XXGVCEhNI?si=VQiiJNoZ0PtT3Qe-"
                     title="Wayward Realms Weather System Demo" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -78,7 +78,7 @@
             <div class="video-wrapper">
                 <iframe 
                     class="media-iframe water-gif" 
-                    data-src="https://www.youtube.com/embed/MmxUsly3S78?si=mnnEsbw3-GVcIPTK" 
+                    data-src="https://www.youtube.com/embed/OwQqwBWH-lM?si=yg7W-i4MHf1FfRsc"
                     title="Wayward Realms Water System Demo" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
