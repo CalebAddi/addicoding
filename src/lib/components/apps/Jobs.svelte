@@ -334,7 +334,7 @@
     }
 }
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 480px)
 {
     .video-wrapper
     {
