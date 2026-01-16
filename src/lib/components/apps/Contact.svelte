@@ -35,7 +35,7 @@
     <section>
         <h2>Contact</h2>
 
-        <form method="POST" action="https://formsubmit.co/caleb.addi.77@gmail.com">
+        <form method="POST" action="https://formsubmit.co/caleb.addi.77@gmail.com" name="contactForm">
             <!-- FormSubmit configuration -->
             <input type="hidden" name="_next" value="https://calebaddi.github.io/addicoding">
             <input type="hidden" name="_captcha" value="false">
@@ -102,9 +102,9 @@
         </form>
 
         <ul class="icons">
-            <li class="linkIcons"><a href="https://www.linkedin.com/in/caleb-addi/" target="_blank" class="icon brands" style="margin-left: -5em;" id="linkedin-icon" aria-label="LinkedIn">
+            <li class="linkIcons"><a href="https://www.linkedin.com/in/caleb-addi/" target="_blank" rel="noopener noreferrer" class="icon brands" style="margin-left: -5em;" id="linkedin-icon" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li class="linkIcons"><a href="https://github.com/CalebAddi" target="_blank" class="icon brands" style="margin-right: -5em; margin-top: -1.1em;" id="github-icon" aria-label="GitHub">
+            <li class="linkIcons"><a href="https://github.com/CalebAddi" target="_blank" rel="noopener noreferrer" class="icon brands" style="margin-right: -5em; margin-top: -1.1em;" id="github-icon" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i></a></li>
         </ul>
     </section>
@@ -123,13 +123,7 @@
 
     form > .fields 
     {
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: -ms-flex;
         display: flex;
-        -moz-flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         justify-content: center;
         width: calc(100% + 0.001rem);
@@ -150,13 +144,7 @@
 
     form > .fields > .field 
     {
-        -moz-flex-grow: 0;
-        -webkit-flex-grow: 0;
-        -ms-flex-grow: 0;
         flex-grow: 0;
-        -moz-flex-shrink: 0;
-        -webkit-flex-shrink: 0;
-        -ms-flex-shrink: 0;
         flex-shrink: 0;
         padding: 1.5rem 0 0 1.5rem;
         width: calc(100% - 1.5rem);
@@ -171,13 +159,7 @@
     input[type="email"],
     textarea 
     {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        -ms-appearance: none;
         appearance: none;
-        -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-        -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-        -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
         transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
         background-color: transparent;
         border-radius: 4px;

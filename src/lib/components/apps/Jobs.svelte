@@ -57,7 +57,7 @@
             <div class="video-wrapper">
                 <iframe 
                     class="media-iframe combat-gif" 
-                    data-src="https://www.youtube.com/embed/r3XXGVCEhNI?si=VQiiJNoZ0PtT3Qe-"
+                    data-src="https://www.youtube-nocookie.com/embed/r3XXGVCEhNI?si=VQiiJNoZ0PtT3Qe-"
                     title="Wayward Realms Weather System Demo" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -78,7 +78,7 @@
             <div class="video-wrapper">
                 <iframe 
                     class="media-iframe water-gif" 
-                    data-src="https://www.youtube.com/embed/OwQqwBWH-lM?si=yg7W-i4MHf1FfRsc"
+                    data-src="https://www.youtube-nocookie.com/embed/OwQqwBWH-lM?si=yg7W-i4MHf1FfRsc"
                     title="Wayward Realms Water System Demo" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -108,7 +108,7 @@
             <div class="video-wrapper">
                 <iframe 
                     class="media-iframe ard-gif" 
-                    data-src="https://www.youtube.com/embed/ac8To4rplk0?si=GERL7MCZkIGWF9vl" 
+                    data-src="https://www.youtube-nocookie.com/embed/ac8To4rplk0?si=GERL7MCZkIGWF9vl" 
                     title="Ardenfall Gameplay Demo" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -139,7 +139,7 @@
             <div class="video-wrapper oa-vid">
                 <iframe 
                     class="media-iframe oa-img" 
-                    data-src="https://www.youtube.com/embed/fybcM4BzEtA" 
+                    data-src="https://www.youtube-nocookie.com/embed/fybcM4BzEtA" 
                     title="Ocean Aero Triton Demo" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

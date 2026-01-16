@@ -59,7 +59,7 @@
                 </div>
 
                 <iframe class="devclip-vid" 
-                data-src="https://www.youtube.com/embed/1Ynm_oknozI?si=cLNH-_F63IS_jGgD" 
+                data-src="https://www.youtube-nocookie.com/embed/1Ynm_oknozI?si=cLNH-_F63IS_jGgD" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
