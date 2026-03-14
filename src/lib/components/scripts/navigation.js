@@ -22,8 +22,6 @@ export default function siteNavigation()
     // Initialize articles visibility
     function initArticles()
     {
-        const fragment = document.createDocumentFragment();
-
         elements.articles.forEach(article => {
             if (article.id !== 'resume') article.style.display = 'none';
         });

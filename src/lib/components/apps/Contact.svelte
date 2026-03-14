@@ -35,10 +35,10 @@
     <section>
         <h2>Contact</h2>
 
-        <form method="POST" action="https://formsubmit.co/caleb.addi.77@gmail.com" name="contactForm">
+        <form method="POST" action="https://formsubmit.co/bfc62655bac83c0b0969fe864e79f09d" name="contactForm">
             <!-- FormSubmit configuration -->
             <input type="hidden" name="_next" value="https://calebaddi.github.io/addicoding">
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_captcha" value="true">
             <input type="hidden" name="_template" value="table">
 
                 <div class="fields">

@@ -51,7 +51,7 @@
                         Randomization Mechanics (Items and Enemy Spawn Locations), Portal System, and Basic Test UI.
                     </p>
 
-                    <h4 style="padding-top: 2em; padding-bottom: -2em;">
+                    <h4 style="padding-top: 2em; margin-bottom: -2em;">
                         Project Link:  
                         <a href="https://github.com/CalebAddi/TheWhitePages" target="_blank" class="icon brands" id="github-icon" aria-label="The White Pages GitHub Repository">
                         <i class="fa-brands fa-github"></i></a>

@@ -19,7 +19,6 @@ export default function setStarfield(scene)
     }
 
     geometry.setAttribute('position', new BufferAttribute(starPos, 3));
-    starfield.sortParticles = true; // Ensure stars are rendered in correct order
     starfield.frustumCulled = false; // Disable frustum culling for starfield
     scene.add(starfield);
 
